@@ -1,3 +1,3 @@
-[submodule "themes/freelancer"]
-	path = themes/freelancer
-	url = https://github.com/joseph-mccarthy/hugo-bootstrap-freelancer-template
+[submodule "themes/hugo-profile"]
+	path = themes/hugo-profile
+	url = https://github.com/gurusabarish/hugo-profile.git
