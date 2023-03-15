@@ -73,7 +73,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "dark" # light
 
   font:
     fontSize: 1rem # default: 1rem
@@ -100,10 +100,6 @@ params:
 
   # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Hugo Profile" # Brand name for the brand | default is the title variable
     disableSearch: false
     menus:
       disableAbout: false
@@ -113,32 +109,6 @@ params:
       disableAchievements: false
       disableContact: false
 
-  # Hero
-  hero:
-    enable: true
-    intro: "Hi, my name is"
-    title: "Isabella."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
-    bottomImage:
-      enable: true
-    # roundImage: true # Make hero image circular | default false
-    button:
-      enable: true
-      name: "Resume"
-      url: "#"
-      download: true
-      newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
 
   # About
   about:
@@ -159,6 +129,48 @@ params:
         - "React"
         - "Node"
         - "Express"
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: "Master of Business Administration"
+        school:
+          name: "University of California, Berkeley"
+          url: "https://example.org"
+        date: "2013 - 2015"
+        GPA: "3.8 out of 5.0"
+        content: |-
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+      - title: "Bachelor of Science in Computer Science"
+        school:
+          name: "Massachusetts Institute of Technology"
+          url: "https://example.org"
+        date: "2009 - 2013"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+          - Face mask detection using a single convolutional neural network.
+
+          Extracurricular Activities
+            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "https://example.com"
+      - title: "High School"
+        school:
+          name: "Thomas Jefferson High School for Science and Technology."
+          url: "https://example.org"
+        GPA: "4.2 out of 5.0"
+        featuredLink:
+          enable: true
+          url: "https://example.com"
 
   # Experience
   experience:
@@ -225,48 +237,6 @@ params:
         date: "Feb 2016 - Mar 2017"
         content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
 
-  # Education
-  education:
-    enable: true
-    # title: "Custom Name"
-    index: false
-    items:
-      - title: "Master of Business Administration"
-        school:
-          name: "University of California, Berkeley"
-          url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
-        content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
-        school:
-          name: "Massachusetts Institute of Technology"
-          url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
-        content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
 
   # Achievements
   achievements:
@@ -337,11 +307,40 @@ params:
           - icon: fab fa-github
             url: https://github.com/gurusabarish/HugoProfileV2
 
+  # Hero
+  hero:
+    enable: false
+    intro: "Hi, my name is"
+    title: "Pythagoras of Samos."
+    subtitle: "I play with a compass and straightedge."
+    content: "A passionate investigator."
+    image: /images/Pythagoras.jpeg
+    bottomImage:
+      enable: false
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: "#"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://example.com
+        - icon: fab fa-twitter
+          url: https://example.com
+        - icon: fab fa-linkedin
+          url: https://example.com
+      customIcons:
+        - icon: https://static.arxiv.org/static/browse/0.3.4/images/arxiv-logo-one-color-white.svg
+          url: "https://example.com"
+
   #Contact
   contact:
-    enable: true
+    enable: false
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
     email: gurusabarisha@gmail.com
     btnName: Mail me
     # formspree:
@@ -355,8 +354,8 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
+      enable: false
+      disableFeaturedImage: true
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
@@ -366,23 +365,23 @@ params:
 
   # List pages like blogs and posts
   listPages:
-    disableFeaturedImage: false
+    disableFeaturedImage: true
 
   # Single pages like blog and post
   singlePages:
     readTime:
-      enable: true
+      enable: false
       content: "min read"
     scrollprogress:
       enable: true
 
   # For translations
-  terms:
-    read: "Read"
-    toc: "Table Of Contents"
-    copyright: "All rights reserved"
-    pageNotFound: "Page not found"
-    emailText: "Check out this site"
+  # terms:
+  #   read: "Read"
+  #   toc: "Table Of Contents"
+  #   copyright: "All rights reserved"
+  #   pageNotFound: "Page not found"
+  #   emailText: "Check out this site"
 
   datesFormat:
     article: "Jan 2, 2006"
