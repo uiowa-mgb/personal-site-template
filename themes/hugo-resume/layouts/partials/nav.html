@@ -13,6 +13,21 @@
       <li class="nav-item">
         <a class="nav-link js-scroll-trigger" href="{{ "#about" | relURL }}">About</a>
       </li>
+      {{ if .Site.Params.showEducation }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      {{ end }}
+      {{ if .Site.Params.showPublications }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#{{ default "Publications" .Site.Params.publicationsAlternateName }}">{{ default "Publications" .Site.Params.publicationsAlternateName }}</a>
+          </li>
+      {{ end }}
+      {{ if .Site.Params.showExperience }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      {{ end }}
       {{ if .Site.Params.showSkills }}
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/#skills">Skills</a>
@@ -28,19 +43,14 @@
             <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
           </li>
       {{ end }}
-      {{ if .Site.Params.showPublications }}
+      {{ if .Site.Params.showConferences }}
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#{{ default "Publications" .Site.Params.publicationsAlternateName }}">{{ default "Publications" .Site.Params.publicationsAlternateName }}</a>
+            <a class="nav-link js-scroll-trigger" href="/#confrences">Conferences</a>
           </li>
       {{ end }}
-      {{ if .Site.Params.showExperience }}
+      {{ if .Site.Params.showTeaching }}
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
-          </li>
-      {{ end }}
-      {{ if .Site.Params.showEducation }}
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+            <a class="nav-link js-scroll-trigger" href="/#teaching">Teaching</a>
           </li>
       {{ end }}
       {{ if .Site.Params.showBlog }}
