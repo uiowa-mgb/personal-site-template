@@ -1,2 +1,2 @@
 # personal-site-template
-A cloneable template for a github hosted personal site
+A forkable template for a github hosted personal site
