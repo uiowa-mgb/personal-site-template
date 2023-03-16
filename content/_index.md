@@ -9,4 +9,4 @@ outputs:
 - rss
 - json
 ---
-Proven Software Platform Engineer with experience leveraging agile, DevOps, and CI/CD to manage large scale distributed platforms both on prem and in public cloud.
+In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
