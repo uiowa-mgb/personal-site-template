@@ -1,0 +1,52 @@
+theme = "hugo-resume"
+languageCode = "en-us"
+
+title = "Pythagoras of Samos"
+baseURL = "https://personal.mathgradboard.com/"
+
+
+[params]
+address = "Metapontum Village, Italy"
+email = "Pythagoras@mathgradboard.com"
+favicon = "/icon/favicon.ico"
+firstName = "Pythagoras"
+lastName = "of Samos"
+phone = "1-555-555-5555"
+profileImage = "images/Pythagoras.jpeg"
+
+showEducation = true
+showTeaching = true
+showConferences = true
+showExperience = false
+showOpenSource = false
+showProjects = false
+showPublications = true
+showQr = false
+showSkills = false
+showCertifications = false
+showBlog = true
+
+[[params.handles]]
+link = "https://www.linkedin.com/"
+name = "LinkedIn"
+
+[[params.handles]]
+link = "https://github.com/uiowa-mgb"
+name = "GitHub"
+
+
+# ==============================================================================
+# No need to change anything below here
+# ==============================================================================
+
+[outputs]
+home = ["HTML", "JSON"]
+
+[taxonomies]
+tag = "tags"
+
+
+PygmentsCodeFences = true
+PygmentsCodeFencesGuessSyntax = true
+PygmentsStyle = "monokai"
+enableGitInfo = false
