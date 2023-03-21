@@ -12,6 +12,7 @@ sitemap:
   priority : 0.8
 ---
 
+$\left\langle \img{/images/Pythagoras.jpeg} \right\rangle$
 
  Pellentesque id mollis ligula. Aliquam erat volutpat. Donec quis turpis nec lacus finibus semper quis a libero. Vestibulum hendrerit velit sit amet elit scelerisque egestas. Pellentesque ut orci rutrum diam dignissim pulvinar. Vivamus varius est quis lacus fermentum viverra. Maecenas vel massa venenatis, laoreet lorem eget, pellentesque metus. Vestibulum ultrices mauris ac nunc elementum tincidunt nec a lectus. Sed non urna massa. Suspendisse potenti. Vestibulum at lacinia nunc. Nam sed elit ultricies, interdum purus pulvinar, ultrices massa.
 

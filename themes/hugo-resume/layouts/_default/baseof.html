@@ -40,6 +40,38 @@
   {{ block "headfiles" . }}
    <!-- pl;aceholder -->
   {{ end }}
+  <script>
+    if (typeof MathJax === 'undefined') {
+    MathJax = {
+      loader: {
+          load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
+          paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
+      },
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$","$$"], ["\\[", "\\]"]],
+        processEscapes: true,
+        processEnvironments: true,
+        extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
+        packages: {'[+]': ['img','color','amscd']}
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+    }
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 </head>
 <body id="page-top">
   {{ partial "nav.html" . }}
