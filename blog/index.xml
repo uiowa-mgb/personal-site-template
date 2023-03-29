@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Pythagoras of Samos</title>
+    <link>https://personal.mathgradboard.com/blog/</link>
+    <description>Recent content in Blog on Pythagoras of Samos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2020 16:47:30 +0000</lastBuildDate><atom:link href="https://personal.mathgradboard.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In et turpis nec ex laoreet</title>
+      <link>https://personal.mathgradboard.com/blog/tempor_vitae_ipsum/</link>
+      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      
+      <guid>https://personal.mathgradboard.com/blog/tempor_vitae_ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ligula vitae vulputate malesuada. Nunc interdum dapibus vestibulum. Phasellus pretium mauris id ex varius vulputate vel maximus odio. Proin tempus malesuada ligula commodo semper. Phasellus enim metus, tincidunt eget odio eu, pellentesque tempus magna. Nullam commodo scelerisque dolor quis luctus. Praesent tempus vel odio vel dapibus.
+Aliquam vitae dolor nec mi auctor dictum eget nec velit. Mauris vestibulum egestas nisl, id eleifend orci facilisis in.</description>
+    </item>
+    
+  </channel>
+</rss>
