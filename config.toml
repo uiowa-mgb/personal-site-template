@@ -1,8 +1,17 @@
 languageCode = "en-us"
 theme = "hugo-resume"
 
-title = "Pythagoras of Samos"
+
+# ==============================================================================
+# The url for the website
+# ==============================================================================
 baseURL = "https://personal.mathgradboard.com/"
+
+# ==============================================================================
+# Personal info section (can leave blank by leaving "")
+# ==============================================================================
+
+title = "Pythagoras of Samos"
 
 [params]
 address = "Metapontum Village, Italy"
@@ -11,20 +20,33 @@ favicon = "/icon/favicon.ico"
 firstName = "Pythagoras"
 lastName = "of Samos"
 phone = "1-555-555-5555"
+
+# ==============================================================================
+# Personal photo section. Replace with name of new file
+# ==============================================================================
 profileImage = "images/Pythagoras.jpeg"
 
+# ==============================================================================
+# Enable disable page sections
+# ==============================================================================
 showEducation = true
-showTeaching = true
-showConferences = true
-showExperience = false
-showOpenSource = false
-showProjects = false
 showPublications = true
-showQr = false
-showSkills = false
-showCertifications = false
+showConferences = true
+showTeaching = true
 showBlog = true
+showService = true
+showAwards = true
 
+showExperience = false
+showProjects = false
+showSkills = false
+showQr = false
+showCertifications = false
+showOpenSource = false
+
+# ==============================================================================
+# Add/remove social media accounts
+# ==============================================================================
 [[params.handles]]
 link = "https://www.linkedin.com/"
 name = "LinkedIn"
@@ -41,7 +63,18 @@ name = "GitHub"
 # link = "https://mathoverflow.net/users/"
 # name = "Stack-Overflow"
 
-# This would render a stack-overflow icon linking to your page if you wanted
+# [[params.handles]]
+# link = "https://www.pinterest.com/"
+# name = "pinterest"
+
+# [[params.handles]]
+# link = "https://www.youtube.com/"
+# name = "youtube"
+
+# [[params.handles]]
+# link = "https://www.instagram.com/"
+# name = "instagram"
+
 
 # ==============================================================================
 # No need to change anything below here

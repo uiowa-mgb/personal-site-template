@@ -9,3 +9,4 @@
 /DiscMorse
 /assets/jsconfig.json
 **/build_dir/**/*
+/data/.gitkeep
