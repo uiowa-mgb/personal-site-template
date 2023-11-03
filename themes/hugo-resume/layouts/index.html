@@ -33,6 +33,12 @@
    {{ if .Site.Params.showTeaching }}
        {{ partial "portfolio/teaching.html" . }}
    {{ end }}
+   {{ if .Site.Params.showService }}
+       {{ partial "portfolio/service.html" . }}
+   {{ end }}
+   {{ if .Site.Params.showAwards }}
+       {{ partial "portfolio/awards.html" . }}
+   {{ end }}
    {{ if .Site.Params.showBlog }}
       {{ with .Site.GetPage "section" "blog" }}
          {{ .Scratch.Set "sectionId" "blog" }}

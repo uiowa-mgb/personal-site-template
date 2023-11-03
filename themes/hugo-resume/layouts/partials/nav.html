@@ -53,6 +53,16 @@
             <a class="nav-link js-scroll-trigger" href="/#teaching">Teaching</a>
           </li>
       {{ end }}
+      {{ if .Site.Params.showService }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#service">Service</a>
+          </li>
+      {{ end }}
+      {{ if .Site.Params.showAwards }}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#awards">Awards</a>
+          </li>
+      {{ end }}
       {{ if .Site.Params.showBlog }}
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
