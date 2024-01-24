@@ -1,16 +1,11 @@
 ---
 title: Blog
-date: 2020-01-07T16:47:30.077Z
-link: NA
-description: NA
-weight: 10
-sitemap:
-  priority: 0.6
-  weight: 0.5
+date: 2020-01-07
+mathjax: true
 ---
 <!--
 
-This page represents the landing page for "publications" section. It is also shown under the homepage header for "publications". It should be therefore relatively short and sweet.
+This page represents the landing page for "blog" section. It is also shown under the homepage header for "blog". It should be therefore relatively short and sweet.
 
 \-->
 
