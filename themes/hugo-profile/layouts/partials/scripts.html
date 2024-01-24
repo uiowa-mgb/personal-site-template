@@ -57,21 +57,38 @@
 {{ if or (.Params.mathjax | default false) (.Site.Params.mathjax) }}
 
 {{ "<!-- MathJax -->" | safeHTML }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" integrity="sha384-M5jmNxKC9EVnuqeMwRHvFuYUE8Hhp0TgBruj/GZRkYtiMrCRgH7yvv5KY+Owi7TW" crossorigin="anonymous"></script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [['\\(','\\)']],
-        displayMath: [['$$','$$'], ['\[','\]']],
+<script>
+    if (typeof MathJax === 'undefined') {
+    MathJax = {
+      loader: {
+          load: ['[img]/img.min.js','[tex]/color','[tex]/amscd'],
+          paths: {img: 'https://cdn.jsdelivr.net/npm/mathjax-img@3'}
+      },
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$","$$"], ["\\[", "\\]"]],
         processEscapes: true,
         processEnvironments: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        TeX: { equationNumbers: { autoNumber: "AMS" },
-             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+        extensions: ["autoload-all.js","AMSmath.js", "AMSsymbols.js","AMScd.js"],
+        packages: {'[+]': ['img','color','amscd']}
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
       }
-    });
-</script>
+    };
+
+    window.addEventListener('load', (event) => {
+        document.querySelectorAll("mjx-container").forEach(function(x){
+          x.parentElement.classList += 'has-jax'})
+      });
+    }
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
 {{ end }}
 
 {{ if (.Site.Params.cloudinary_cloud_name | default false) }}
@@ -79,7 +96,7 @@
 {{ "<!-- cloudinary -->" | safeHTML }}
 <script src="https://unpkg.com/cloudinary-core@2.13.0/cloudinary-core-shrinkwrap.js" integrity="sha384-0bQduxVhZMs6xfvcPH9osdUIw44hjF8EahHuQBdyN6Rryk8tgyFO80Yz5d14F+5d" crossorigin="anonymous"></script>
 <script type="text/javascript">
-    var cl = cloudinary.Cloudinary.new({cloud_name: "{{- .Site.Params.cloudinary_cloud_name }}"}); 
+    var cl = cloudinary.Cloudinary.new({cloud_name: "{{- .Site.Params.cloudinary_cloud_name }}"});
     cl.responsive();
 </script>
 

@@ -1,15 +1,7 @@
 ---
 title: "Proin ac purus venenatis, volutpat lorem non, rutrum lacus"
 date: 2023-01-08
-pubtype: "Talk"
-featured: true
-description: "Donec viverra ultricies aliquam. Praesent at bibendum mi, quis euismod dolor. Vivamus vel diam quis turpis gravida commodo non vitae lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc commodo justo ipsum, eget consequat nibh semper a. Etiam fermentum lectus sapien, at lacinia quam tristique sed. Maecenas eget leo mauris. Integer aliquet elementum ante, non malesuada orci euismod ac. Maecenas id laoreet mi. Pellentesque at gravida tellus, nec sagittis enim. Phasellus elit erat, aliquam eu tristique ac, tempor vitae ipsum. Vestibulum accumsan odio diam, a scelerisque augue rhoncus vel. "
-tags: ["Tag","Tag 2","Tag 3"]
-link: "https://en.wikipedia.org/wiki/Pythagoras"
-fact: "In dolor dolor, eleifend at leo a, viverra convallis risus."
-weight: 400
-sitemap:
-  priority : 0.8
+mathjax: true
 ---
 
 ## Some math

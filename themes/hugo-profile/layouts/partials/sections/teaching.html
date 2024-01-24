@@ -1,10 +1,10 @@
-{{ if .Site.Params.talks.enable | default false }}
-<section id="talks" class="py-5">
+{{ if .Site.Params.teaching.enable | default false }}
+<section id="teaching" class="py-5">
     <div class="container">
-        <h3 class="text-center">{{ .Site.Params.talks.title | default "Talks" }}</h3>
+        <h3 class="text-center">{{ .Site.Params.teaching.title | default "Teaching" }}</h3>
         <div class="row justify-content-center py-5">
-            {{ $indexMenu := .Site.Params.talks.index }}
-            {{ range $index, $element := .Site.Params.talks.items }}
+            {{ $indexMenu := .Site.Params.teaching.index }}
+            {{ range $index, $element := .Site.Params.teaching.items }}
             <div class="col-12 p-0">
                 <div class="row row align-items-center justify-content-center m-1 mb-4">
                     {{ if $indexMenu }}
@@ -35,7 +35,7 @@
                                 {{ .info.name }}
                                 {{ end }}
 
-                                <div class="py-1 talks-content">
+                                <div class="py-1 teaching-content">
                                     {{ .content | markdownify}}
                                 </div>
 
