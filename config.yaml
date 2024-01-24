@@ -1,8 +1,11 @@
-baseURL: "https://personal.mathgradboard.com/"
-languageCode: "en-us"
-title: "Pythagoras of Samos"
-theme: hugo-profile
 
+
+################################################################################
+# No need to change anything between here
+################################################################################
+
+languageCode: "en-us"
+theme: hugo-profile
 outputs:
   home:
     - "HTML"
@@ -11,7 +14,6 @@ outputs:
   page:
     - "HTML"
     - "RSS"
-
 Paginate: 3
 enableRobotsTXT: true
 # disqusShortname: your-disqus-shortname
@@ -22,6 +24,26 @@ markup:
     renderer:
       unsafe: true
 
+################################################################################
+# and here
+################################################################################
+
+
+################################################################################
+# Base Url @@@link
+################################################################################
+baseURL: "https://personal.mathgradboard.com/"
+
+
+################################################################################
+# Title @@@link
+################################################################################
+title: "Pythagoras of Samos"
+
+
+################################################################################
+# Menu Configuration @@@link
+################################################################################
 Menus:
   main:
     - identifier: Publications
@@ -47,54 +69,38 @@ Menus:
       parent: dropdown
       weight: 2
 
+
+################################################################################
+# Start Site Params @@@link
+################################################################################
 params:
-  title: "Pythagoras of Samos"
-  description: In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  # staticPath: ""  # The path to serve the static files from
-  favicon: "/icons/favicon.ico"
 
-  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
-  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
-  # Note the lack of "" in true, it should be of boolean type.
+################################################################################
+# No need to change anything between here
+################################################################################
+
   useBootstrapCDN: false
-
-  # If you want to load dynamically responsive images from Cloudinary
-  # This requires your images to be uploaded + hosted on Cloudinary
-  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
-  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
-
-  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: true
-
-  # Whether the fade animations on the home page will be enabled
   animate: true
-
-  theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
-
   font:
     fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
     lineHeight: 1.5 # default: 1.5
     textAlign: left # default: left
+################################################################################
+# and here
+################################################################################
 
-  # color preference
-  # color:
-  #   textColor:
-  #   secondaryTextColor:
-  #   backgroundColor:
-  #   secondaryBackgroundColor:
-  #   primaryColor:
-  #   secondaryColor:
 
-  #   darkmode:
-  #     textColor:
-  #     secondaryTextColor:
-  #     backgroundColor:
-  #     secondaryBackgroundColor:
-  #     primaryColor:
-  #     secondaryColor:
+################################################################################
+# Favicon @@@link
+################################################################################
+  favicon: "/icons/favicon.ico"
+
+
+################################################################################
+# Start Nav Section @@@Link
+################################################################################
 
   # If you want to customize the menu, you can change it here
   navbar:
@@ -115,7 +121,45 @@ params:
       disableAchievements: true
       disableContact: true
 
-  # Hero
+
+################################################################################
+# End Nav Section @@@Link
+################################################################################
+
+################################################################################
+# Start Theme Section @@@Link
+################################################################################
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light" # dark
+
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+################################################################################
+# End Theme Section
+################################################################################
+
+
+
+################################################################################
+# Start Theme Section @@@Link
+################################################################################
   hero:
     enable: true
     intro: "Hi, my name is"
@@ -125,7 +169,7 @@ params:
     image: images/Pythagoras.jpeg
     bottomImage:
       enable: false
-    # roundImage: true # Make hero image circular | default false
+    roundImage: true # Make hero image circular | default false
     button:
       enable: true
       name: "CV"
@@ -142,11 +186,18 @@ params:
       #   - icon: /fav.png
       #     url: "https://example.com"
 
-  # About
+
+################################################################################
+# End Theme Section
+################################################################################
+
+################################################################################
+# Start Theme Section @@@Link
+################################################################################
   about:
     enable: true
     title: "About Me"
-    image: "/images/Pythagoras.jpeg"
+    # image: "/images/Pythagoras.jpeg"
     content: |-
       In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo
        diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit.
@@ -161,29 +212,14 @@ params:
         - "Points"
         - "Angles"
 
-  # Experience
-  experience:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - job: "Teacher"
-        company: "dui eros sagittis ligula"
-        companyUrl: "https://example.com"
-        date: "February 499BC - February 495BC"
-        featuredLink:
-          enable: false
-          name: "View the project"
-          url: "https://example.com"
-        content: "Duis aliquam at leo in hendrerit. Sed id posuere magna. "
 
+################################################################################
+# End Theme Section
+################################################################################
 
-      - job: "Teacher"
-        company: "leo in hendrerit"
-        companyUrl: "https://example.com"
-        date: "February 500BC - February 499BC"
-        content: "Duis aliquam at leo in hendrerit. Sed id posuere magna. "
-
-  # Education
+################################################################################
+# Start education Section @@@Link
+################################################################################
   education:
     enable: true
     # title: "Custom Name"
@@ -219,7 +255,44 @@ params:
         #   url: "https://example.com"
 
 
-  # Talks
+
+################################################################################
+# End education Section
+################################################################################
+
+################################################################################
+# Start experience Section @@@Link
+################################################################################
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Teacher"
+        company: "dui eros sagittis ligula"
+        companyUrl: "https://example.com"
+        date: "February 499BC - February 495BC"
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: "Duis aliquam at leo in hendrerit. Sed id posuere magna. "
+
+
+      - job: "Teacher"
+        company: "leo in hendrerit"
+        companyUrl: "https://example.com"
+        date: "February 500BC - February 499BC"
+        content: "Duis aliquam at leo in hendrerit. Sed id posuere magna. "
+
+
+################################################################################
+# End experience Section
+################################################################################
+
+
+################################################################################
+# Start talks Section @@@Link
+################################################################################
   talks:
     enable: true
     # title: "Custom Name"
@@ -251,7 +324,13 @@ params:
         #   name: "Slides"
         #   url: "https://example.com"
 
-  # Talks
+################################################################################
+# End talks Section
+################################################################################
+
+################################################################################
+# Start teaching Section @@@Link
+################################################################################
   teaching:
     enable: true
     # title: "Custom Name"
@@ -283,7 +362,14 @@ params:
         #   name: "Slides"
         #   url: "https://example.com"
 
-  # Achievements
+
+################################################################################
+# End teaching Section
+################################################################################
+
+################################################################################
+# Start achievements Section @@@Link
+################################################################################
   achievements:
     enable: true
     title: "Awards"
@@ -297,7 +383,14 @@ params:
         content: Praesent at bibendum mi, quis euismod dolor.
         image: /images/Pythagoras.jpeg
 
-  # projects
+
+################################################################################
+# End achievements Section
+################################################################################
+
+################################################################################
+# Start projects Section @@@Link
+################################################################################
   projects:
     enable: false
     # title: "Custom Name"
@@ -320,7 +413,14 @@ params:
           - icon: fab fa-twitter
             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-  #Contact
+
+################################################################################
+# End projects Section
+################################################################################
+
+################################################################################
+# Start contact Section @@@Link
+################################################################################
   contact:
     enable: true
     # title: "Custom Name"
@@ -329,19 +429,27 @@ params:
     btnName: Mail me
 
 
+################################################################################
+# End contact Section
+################################################################################
+
+################################################################################
+# Footer footer @@@link
+################################################################################
   footer:
-    recentPosts:
-      path: "blogs"
-      count: 3
-      title: Recent Posts
-      enable: true
-      disableFeaturedImage: false
     socialNetworks:
       github: https://github.com
       linkedin: https://linkedin.com
       # twitter: https://twitter.com
       # instagram: https://instagram.com
       # facebook: https://facebook.com
+################################################################################
+# End footer Section
+################################################################################
+
+################################################################################
+# No need to change anything from here
+################################################################################
 
   # List pages like blogs and posts
   listPages:
@@ -370,3 +478,11 @@ params:
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
+
+################################################################################
+# to here
+################################################################################
+
+################################################################################
+# End Site Params
+################################################################################
