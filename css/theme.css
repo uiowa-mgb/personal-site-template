@@ -1,47 +1,47 @@
-:root {
+/* light mode */
+.light > *{
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
 
-/* ========================================================================== */
-/* ========================== Change me ===================================== */
-/* ========================================================================== */
-/* Primary Color Variables */
-    --r-primary : #ff5555;
-    --r-background  :#282a36;
-    --r-font  :#f8f8f2;
-    --r-focus   : #d5654d;
-/* Secondary Color variables */
-    --r-font2   : var(--r-primary);
-    --r-icons   : var(--r-primary);
-    --r-border  : var(--r-primary);
+/* dark mode */
+.dark {
+    --background-color: var(--background-color-dark) !important;
+    --secondary-background-color: var(--secondary-background-color-dark) !important;
+    --text-color: var(--text-color-dark) !important;
+    --text-secondary-color: var(--text-secondary-color-dark) !important;
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+}
 
+.text-secondary {
+    color: var(--text-secondary-color) !important;
+}
 
-/* ========================================================================== */
-/* ========================== black and white ================================ */
-/* ========================================================================== */
-/* Primary Color Variables */
-    /*--r-primary : #c0c0c0;
-    --r-background  :#ffffff;
-    --r-font  :#000000;
-    --r-focus   : #c0c0c0;*/
-/* Secondary Color variables */
-    /*--r-font2   : var(--r-primary);
-    --r-icons   : var(--r-primary);
-    --r-border  : var(--r-primary); */
-/* ========================================================================== */
-/* ========================== black and gold ================================ */
-/* ========================================================================== */
-/* Primary Color Variables */
-  /*--r-primary : #ffcd00;
-    --r-background  :#000000;
-    --r-font  :#ffffff;
-    --r-focus   : #FFDC4D;*/
-/* Secondary Color variables */
-  /*--r-font2   : var(--r-primary);
-  --r-icons   : var(--r-primary);
-  --r-border  : var(--r-primary); */
+#theme-toggle:focus {
+    outline: 0;
+}
 
-  /* ========================================================================== */
-  /* for other colors check out https://coolors.co/ */
-  /* ========================================================================== */
+#theme-toggle svg {
+    height: 18px;
+}
 
+button#theme-toggle {
+    border: none;
+    font-size: 26px;
+    margin: auto 4px;
+}
 
+body.dark #moon {
+    vertical-align: middle;
+    display: none;
+}
+
+body:not(.dark) #sun {
+    display: none;
+}
+
+body *::selection {
+    color: var(--text-color) !important;
+    background-color: var(--primary-color) !important;
 }
