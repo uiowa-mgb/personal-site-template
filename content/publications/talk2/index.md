@@ -1,9 +1,16 @@
 ---
 title: "Proin ac purus venenatis, volutpat lorem non, rutrum lacus"
 date: 2022-11-08
-weight: 400
-sitemap:
-  priority : 0.8
+draft: false
+github_link: "https://github.com/gurusabarish/hugo-profile"
+author: "pythagoras"
+tags:
+  - tag1
+  - tag2
+  - tag3
+image:
+description: ""
+toc:
 ---
 
 

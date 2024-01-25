@@ -19,7 +19,7 @@
           <div class="title mb-5">
             <h1 class="text-center mb-4">{{ .Title }}</h1>
             <div class="text-center">
-              {{ .Params.author }} 
+              {{ .Params.author }}
               <small>|</small>
               {{ .Date.Format (.Site.Params.datesFormat.article | default "Jan 2, 2006") }}
 
@@ -69,21 +69,20 @@
             <h5>{{ .Site.Params.terms.social | default "Social" }}</h5>
             <div class="social-content">
               <ul class="list-inline">
+                {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text={{ .Title }}&url={{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
-                    <i class="fab fa-twitter"></i>
+                  <a target="_blank" href="{{ .url }}">
+                    <i class="{{ .icon}} "></i>
                   </a>
                 </li>
+                {{ end }}
+                {{ range .Site.Params.hero.socialLinks.customIcons }}
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text={{ .Title }}: {{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
-                    <i class="fab fa-whatsapp"></i>
-                  </a>
+                    <a href="{{ .url }}" target="_blank" class="img-icon">
+                        <img src="/{{ .icon }}">
+                    </a>
                 </li>
-                <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject={{ .Title }}&amp;body={{ .Site.Params.terms.emailText | default "Check out this site" }} {{ .Site.Params.hostName }}{{ .Permalink | absURL }}'>
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
+                {{ end }}
               </ul>
             </div>
           </aside>

@@ -1,9 +1,16 @@
 ---
 title: 'In et turpis nec ex laoreet'
-date: Thu, 01 Jan 2009 14:09:10 +0000
+date: 2022-11-08
 draft: false
-featured: true
-tags: [tag, tag 2, tag 3]
+github_link: "https://github.com/gurusabarish/hugo-profile"
+author: "Gurusabarish"
+tags:
+  - tag1
+  - tag2
+  - tag3
+image: /images/pythagoras.jpeg
+description: ""
+toc:
 ---
 
 
