@@ -75,11 +75,11 @@ params:
       enable : true
       showOnScrollUp : true
     menus:
-      disableAbout: true
+      disableAbout: false
       disableExperience: false
       disableEducation: false
       disableProjects: true
-      disableAchievements: true
+      disableAchievements: false
       disableTalks: false
       disableTeaching: false
       disableContact: true
@@ -146,8 +146,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Pythagoras of Samos."
-    subtitle: "asdfasdf"
-    content: "ddddd"
+    subtitle: ""
+    content: ""
     image: images/Pythagoras.jpeg
     roundImage: true
     button:
@@ -199,7 +199,8 @@ params:
 ################################################################################
 
 ################################################################################
-# Start education Section @@@Link
+# Start education Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Education-Section
 ################################################################################
   education:
     enable: true
@@ -233,7 +234,8 @@ params:
 ################################################################################
 
 ################################################################################
-# Start experience Section @@@Link
+# Start experience Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Experience-Section
 ################################################################################
   experience:
     enable: true
@@ -263,7 +265,8 @@ params:
 
 
 ################################################################################
-# Start talks Section @@@Link
+# Start talks Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Talks-Section
 ################################################################################
   talks:
     enable: true
@@ -274,15 +277,7 @@ params:
         info:
           name: "Hermodamas of Samos Conference of champions"
           url: "https://en.wikipedia.org/w/index.php?title=Hermodamas_of_Samos&action=edit&redlink=1"
-        date: "590 BC"
-        # content: |-
-        #   Extracurricular Activities
-        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "Slides"
-          url: "https://example.com"
+        date: "590 495BC"
       - title: "A talk about Circles"
         info:
           name: "Hermodamas of Samos Conference of champions"
@@ -291,17 +286,19 @@ params:
         content: |-
             - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        # featuredLink:
-        #   enable: true
-        #   name: "Slides"
-        #   url: "https://example.com"
+        featuredLink:
+          enable: true
+          name: "Slides"
+          url: "https://example.com"
+
 
 ################################################################################
 # End talks Section
 ################################################################################
 
 ################################################################################
-# Start teaching Section @@@Link
+# Start teaching Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Teaching-Section
 ################################################################################
   teaching:
     enable: true
@@ -310,29 +307,21 @@ params:
     items:
       - title: "Triangles 101"
         info:
-          name: "Hermodamas of Samos Conference of champions"
+          name: "University technical college"
           url: "https://en.wikipedia.org/w/index.php?title=Hermodamas_of_Samos&action=edit&redlink=1"
         date: "Fall 590 BC"
-        # content: |-
-        #   Extracurricular Activities
-        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "Syllabus"
-          url: "https://example.com"
       - title: "Circles 101"
         info:
-          name: "Hermodamas of Samos Conference of champions"
+          name: "University technical college"
           url: "https://en.wikipedia.org/w/index.php?title=Hermodamas_of_Samos&action=edit&redlink=1"
         date: "Spring 591 BC"
         content: |-
             - Lorem ipsum dolor sit amet consectetur adipisicing elit.
             - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        # featuredLink:
-        #   enable: true
-        #   name: "Slides"
-        #   url: "https://example.com"
+        featuredLink:
+          enable: true
+          name: "Syllabus"
+          url: "https://example.com"
 
 
 ################################################################################
@@ -340,7 +329,8 @@ params:
 ################################################################################
 
 ################################################################################
-# Start achievements Section @@@Link
+# Start achievements Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Achievements-Section
 ################################################################################
   achievements:
     enable: true
@@ -349,11 +339,10 @@ params:
       - title: Some fellowship
         content: |-
            Donec viverra ultricies aliquam. Praesent at bibendum mi, quis euismod dolor. Vivamus vel diam quis turpis gravida commodo non vitae lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc commodo justo ipsum, eget consequat nibh semper a. Etiam fermentum lectus sapien
-        url: https://example.com
-
       - title: Some other fellowship
         content: Praesent at bibendum mi, quis euismod dolor.
         image: /images/Pythagoras.jpeg
+        url: https://example.com
 
 
 ################################################################################
@@ -361,7 +350,8 @@ params:
 ################################################################################
 
 ################################################################################
-# Start projects Section @@@Link
+# Start projects Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Projects-Section
 ################################################################################
   projects:
     enable: false
@@ -391,7 +381,8 @@ params:
 ################################################################################
 
 ################################################################################
-# Start contact Section @@@Link
+# Start contact Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Contact-Section
 ################################################################################
   contact:
     enable: true

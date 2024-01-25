@@ -238,6 +238,10 @@
 
 /* Social */
 
+#single .social-content img {
+    width: 1em;
+}
+
 #single aside.social {
     padding: .7rem 1rem;
 }

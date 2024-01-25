@@ -1,14 +1,14 @@
 <div class="text-center pt-2">
     {{ range .Site.Params.hero.socialLinks.fontAwesomeIcons }}
         <li class="list-inline-item text-center">
-            <a target="_blank" href="{{ .url }}">
+            <a target="_blank" href="{{ .url }}" class="btn social-icon">
                 <i class="{{ .icon}} "></i>
             </a>
         </li>
     {{ end }}
     {{ range .Site.Params.hero.socialLinks.customIcons }}
         <li class="list-inline-item text-center">
-            <a href="{{ .url }}" target="_blank" class="img-icon">
+            <a href="{{ .url }}" target="_blank" class="img-icon social-icon">
                 <img src="{{ .icon }}">
             </a>
         </li>

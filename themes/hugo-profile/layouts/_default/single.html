@@ -79,7 +79,7 @@
                 {{ range .Site.Params.hero.socialLinks.customIcons }}
                 <li class="list-inline-item text-center">
                     <a href="{{ .url }}" target="_blank" class="img-icon">
-                        <img src="{{ .icon }}">
+                        <img src="/{{ .icon }}">
                     </a>
                 </li>
                 {{ end }}

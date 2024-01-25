@@ -113,23 +113,6 @@
                     {{ end }}
 
 
-                    {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
-                            aria-label="projects">
-                            {{ .Site.Params.projects.title | default "Projects" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
-                            aria-label="achievements">
-                            {{ .Site.Params.achievements.title | default "Achievements" }}
-                        </a>
-                    </li>
-                    {{ end }}
 
                     {{ if and (.Site.Params.talks.enable | default false) (not (.Site.Params.navbar.menus.disableTalks | default false)) }}
                     <li class="nav-item navbar-text">
@@ -145,6 +128,24 @@
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#teaching"
                             aria-label="talks">
                             {{ .Site.Params.teaching.title | default "Teaching" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
+                            aria-label="projects">
+                            {{ .Site.Params.projects.title | default "Projects" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#achievements"
+                            aria-label="achievements">
+                            {{ .Site.Params.achievements.title | default "Achievements" }}
                         </a>
                     </li>
                     {{ end }}
