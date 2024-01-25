@@ -49,29 +49,13 @@ title: "Pythagoras of Samos"
 ################################################################################
 
 ################################################################################
-# Start Site Params @@@link
+# Start Site Params
 ################################################################################
 params:
 
 ################################################################################
-# No need to change anything between here
-################################################################################
-
-  useBootstrapCDN: false
-  mathjax: true
-  animate: true
-  font:
-    fontSize: 1rem # default: 1rem
-    fontWeight: 400 # default: 400
-    lineHeight: 1.5 # default: 1.5
-    textAlign: left # default: left
-################################################################################
-# and here
-################################################################################
-
-
-################################################################################
-# Start Favicon @@@link
+# Start Favicon
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Favicon
 ################################################################################
   favicon: "/icons/favicon.ico"
 ################################################################################
@@ -80,38 +64,34 @@ params:
 
 
 ################################################################################
-# Start Navbar Section @@@Link
+# Start Navbar Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Navbar-Section
 ################################################################################
 
-  # If you want to customize the menu, you can change it here
   navbar:
-    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
-    # brandName: "Pythagoras" # Brand name for the brand | default is the title variable
-    # searchPlaceholder: "Search"
+    align: ms-auto # No need to change
     disableSearch: false
     stickyNavBar:
       enable : true
       showOnScrollUp : true
     menus:
-      disableAbout: false
+      disableAbout: true
       disableExperience: false
       disableEducation: false
       disableProjects: true
       disableAchievements: true
+      disableTalks: false
+      disableTeaching: false
       disableContact: true
       main:
         - identifier: Publications
           name: Publications
           title: Publications
           url: /publications
-          weight: 2
         #Dropdown menu
         - identifier: dropdown
           title: Example dropdown menu
           name: Extras
-          weight: 3
           children:
             - identifier: Blog
               title: Blog
@@ -123,11 +103,12 @@ params:
               url: /another_section
 
 ################################################################################
-# End Navbar Section @@@Link
+# End Navbar Section
 ################################################################################
 
 ################################################################################
-# Start Theme Section @@@Link
+# Start Theme Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Theme-Section
 ################################################################################
   theme:
     disableThemeToggle: false
@@ -158,18 +139,17 @@ params:
 
 
 ################################################################################
-# Start Hero Section @@@Link
+# Start Hero Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/Hero-Section
 ################################################################################
   hero:
     enable: true
     intro: "Hi, my name is"
     title: "Pythagoras of Samos."
-    subtitle: ""
-    content: ""
+    subtitle: "asdfasdf"
+    content: "ddddd"
     image: images/Pythagoras.jpeg
-    bottomImage:
-      enable: false
-    roundImage: true # Make hero image circular | default false
+    roundImage: true
     button:
       enable: true
       name: "CV"
@@ -178,14 +158,13 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - identifier: github
-          icon: fab fa-github
+        - icon: fab fa-github
           url: https://example.com
         - icon: fab fa-linkedin
           url: https://example.com
-      # customIcons:
-      #   - icon: /fav.png
-      #     url: "https://example.com"
+      customIcons:
+        - icon: images/DNA.png
+          url: "https://example.com"
 
 
 ################################################################################
@@ -193,16 +172,17 @@ params:
 ################################################################################
 
 ################################################################################
-# Start About Section @@@Link
+# Start About Section
+# https://github.com/uiowa-mgb/personal-site-template/wiki/About-Section
 ################################################################################
   about:
     enable: true
     title: "About Me"
     # image: "/images/Pythagoras.jpeg"
     content: |-
-      In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo
-       diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit.
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo
+        diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     skills:
       enable: true
       title: "Here are some of my research interests:"
@@ -231,29 +211,20 @@ params:
           name: "Hermodamas of Samos"
           url: "https://en.wikipedia.org/w/index.php?title=Hermodamas_of_Samos&action=edit&redlink=1"
         date: "595 BC - 590 BC"
-        # GPA: "3.8 out of 5.0"
-        # content: |-
-        #   Extracurricular Activities
-        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
       - title: "Quisque consectetur"
         school:
           name: "Pherecydes of Syros"
           url: "https://en.wikipedia.org/wiki/Pherecydes_of_Syros"
         date: "595 BC - 590 BC"
-        # GPA: "3.9 out of 5.0"
-        # content: |-
-        #   I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-        #   - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-        #   - Face mask detection using a single convolutional neural network.
-
-        #   Extracurricular Activities
-        #     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        #     - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        # featuredLink:
-        #   enable: true
-        #   name: "My academic record"
-        #   url: "https://example.com"
+        GPA: "3.9 out of 5.0"
+        content: |-
+          In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo
+          diam. Vivamus at urna dignissim, venenatis dolor ut, laoreet elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        featuredLink:
+          enable: true
+          name: "My academic record"
+          url: "https://example.com"
 
 
 
@@ -463,6 +434,14 @@ params:
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
 
+  useBootstrapCDN: false
+  mathjax: true
+  animate: true
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
 
