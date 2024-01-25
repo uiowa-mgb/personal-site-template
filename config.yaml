@@ -48,40 +48,6 @@ title: "Pythagoras of Samos"
 # End Title Section
 ################################################################################
 
-
-################################################################################
-# Start Menu Configuration @@@link
-################################################################################
-Menus:
-  main:
-    - identifier: Publications
-      name: Publications
-      title: Publications
-      url: /publications
-      weight: 2
-    #Dropdown menu
-    - identifier: dropdown
-      title: Example dropdown menu
-      name: Dropdown
-      weight: 3
-    - identifier: Blog
-      title: Blog
-      name: Blog
-      url: /blog
-      parent: dropdown
-      weight: 1
-    - identifier: "???"
-      title: "???"
-      name: "???"
-      url: /another_section
-      parent: dropdown
-      weight: 2
-
-################################################################################
-# End Menu Configuration
-################################################################################
-
-
 ################################################################################
 # Start Site Params @@@link
 ################################################################################
@@ -123,8 +89,8 @@ params:
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     # brandName: "Pythagoras" # Brand name for the brand | default is the title variable
-    disableSearch: false
     # searchPlaceholder: "Search"
+    disableSearch: false
     stickyNavBar:
       enable : true
       showOnScrollUp : true
@@ -135,7 +101,26 @@ params:
       disableProjects: true
       disableAchievements: true
       disableContact: true
-
+      main:
+        - identifier: Publications
+          name: Publications
+          title: Publications
+          URL: /publications
+          weight: 2
+        #Dropdown menu
+        - identifier: dropdown
+          title: Example dropdown menu
+          name: Extras
+          weight: 3
+          children:
+            - identifier: Blog
+              title: Blog
+              name: Blog
+              url: /blog
+            - identifier: "???"
+              title: "???"
+              name: "???"
+              url: /another_section
 
 ################################################################################
 # End Navbar Section @@@Link
@@ -193,7 +178,8 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
-        - icon: fab fa-github
+        - identifier: github
+          icon: fab fa-github
           url: https://example.com
         - icon: fab fa-linkedin
           url: https://example.com
@@ -446,20 +432,6 @@ params:
 
 ################################################################################
 # End contact Section
-################################################################################
-
-################################################################################
-# Start Footer Section @@@link
-################################################################################
-  footer:
-    socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      # twitter: https://twitter.com
-      # instagram: https://instagram.com
-      # facebook: https://facebook.com
-################################################################################
-# End footer Section
 ################################################################################
 
 ################################################################################
