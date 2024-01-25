@@ -173,7 +173,7 @@
 /* Tags */
 #single aside.tags {
     max-height: 35vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #single aside.tags h5 {
@@ -204,7 +204,7 @@
 #single aside.toc {
     padding: .7rem 1rem;
     max-height: 50vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #single aside.toc h5 {
@@ -237,6 +237,10 @@
 }
 
 /* Social */
+
+#single .social-content img {
+    width: 1em;
+}
 
 #single aside.social {
     padding: .7rem 1rem;

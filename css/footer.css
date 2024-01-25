@@ -11,6 +11,12 @@ footer a:hover {
   color: var(--primary-color) !important;
 }
 
+
+footer a img {
+    width: 1em;
+}
+
+
 footer .card {
     background-color: var(--secondary-color) !important;
     border-radius: .75rem;

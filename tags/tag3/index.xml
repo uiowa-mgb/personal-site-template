@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pythagoras of Samos</title>
-    <link>https://personal.mathgradboard.com/</link>
-    <description>Recent content on Pythagoras of Samos</description>
+    <title>tag3 on Pythagoras of Samos</title>
+    <link>https://personal.mathgradboard.com/tags/tag3/</link>
+    <description>Recent content in tag3 on Pythagoras of Samos</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://personal.mathgradboard.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://personal.mathgradboard.com/tags/tag3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proin ac purus venenatis, volutpat lorem non, rutrum lacus</title>
       <link>https://personal.mathgradboard.com/publications/talk1/</link>
@@ -43,15 +43,6 @@ Aliquam vitae dolor nec mi auctor dictum eget nec velit. Mauris vestibulum egest
       
       <guid>https://personal.mathgradboard.com/publications/talk2/</guid>
       <description>Pellentesque id mollis ligula. Aliquam erat volutpat. Donec quis turpis nec lacus finibus semper quis a libero. Vestibulum hendrerit velit sit amet elit scelerisque egestas. Pellentesque ut orci rutrum diam dignissim pulvinar. Vivamus varius est quis lacus fermentum viverra. Maecenas vel massa venenatis, laoreet lorem eget, pellentesque metus. Vestibulum ultrices mauris ac nunc elementum tincidunt nec a lectus. Sed non urna massa. Suspendisse potenti. Vestibulum at lacinia nunc. Nam sed elit ultricies, interdum purus pulvinar, ultrices massa.</description>
-    </item>
-    
-    <item>
-      <title>Image Gallery</title>
-      <link>https://personal.mathgradboard.com/another_section/item1/</link>
-      <pubDate>Sat, 25 Jun 2022 18:35:46 +0530</pubDate>
-      
-      <guid>https://personal.mathgradboard.com/another_section/item1/</guid>
-      <description></description>
     </item>
     
   </channel>
