@@ -1,34 +1,3 @@
-
-
-################################################################################
-# No need to change anything between here
-################################################################################
-
-languageCode: "en-us"
-theme: hugo-profile
-outputs:
-  home:
-    - "HTML"
-    - "RSS"
-    - "JSON"
-  page:
-    - "HTML"
-    - "RSS"
-Paginate: 3
-enableRobotsTXT: true
-# disqusShortname: your-disqus-shortname
-# googleAnalytics: G-MEASUREMENT_ID
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
-################################################################################
-# and here
-################################################################################
-
-
 ################################################################################
 # Start Base Url
 # https://github.com/uiowa-mgb/personal-site-template/wiki/Base-Url
@@ -435,6 +404,26 @@ params:
     textAlign: left # default: left
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
+
+languageCode: "en-us"
+theme: hugo-profile
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
 ################################################################################
 # to here
