@@ -146,7 +146,7 @@ params:
 ################################################################################
   about:
     enable: true
-    title: "About Me"
+    title: "Bio"
     # image: "/images/Pythagoras.jpeg"
     content: |-
         In dolor dolor, eleifend at leo a, viverra convallis risus. Aliquam eu leo
