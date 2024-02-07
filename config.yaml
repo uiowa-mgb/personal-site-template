@@ -2,7 +2,7 @@
 # Start Base Url
 # https://github.com/uiowa-mgb/personal-site-template/wiki/Base-Url
 ################################################################################
-baseURL: "https://personal.mathgradboard.com/"
+baseURL: "https://robldeye.github.io/"
 ################################################################################
 # End Base Url
 ################################################################################
@@ -12,7 +12,7 @@ baseURL: "https://personal.mathgradboard.com/"
 # Start Title Section
 # https://github.com/uiowa-mgb/personal-site-template/wiki/Title-Section
 ################################################################################
-title: "Pythagoras of Samos"
+title: "Robert DeYeso III"
 ################################################################################
 # End Title Section
 ################################################################################
@@ -114,7 +114,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Pythagoras of Samos."
+    title: "Robert DeYeso III"
     subtitle: ""
     content: ""
     image: images/Pythagoras.jpeg
